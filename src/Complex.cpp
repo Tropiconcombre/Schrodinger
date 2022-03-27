@@ -33,6 +33,10 @@ Complex Complex::operator/(Complex const& c2) const {
    return Complex(tmp.real() / norm, tmp.imag() / norm);
 }
 
+Complex Complex::operator=(Complex const& c2) const {
+   return Complex(c2.real(), c2.imag());
+}
+
 bool Complex::operator==(Complex const& c2) const {
    Complex difference = *this - c2;
    return (std::abs(difference.real()) < Complex::EPSILON)

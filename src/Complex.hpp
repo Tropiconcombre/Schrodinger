@@ -23,6 +23,7 @@ public:
   Complex operator-(Complex const& c2) const;
   Complex operator*(Complex const& c2) const;
   Complex operator/(Complex const& c2) const;
+  Complex operator=(Complex const& c2) const;
   bool operator==(const Complex& c2) const;
   bool operator!=(const Complex& c2) const;
 };
